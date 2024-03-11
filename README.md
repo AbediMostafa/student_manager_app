@@ -3,8 +3,10 @@
 please run:
 1. `npm install` in `frontend` folder
 2. `npm run dev` in `frontend` folder
-3. `php artisan migrate` in backend folder
-4. `php artisan serve` in backend folder
+3. `composer install` in backend folder
+4. rename `.env.example` to `.env`
+5. `php artisan migrate` in backend folder
+6. `php artisan serve` in backend folder
 
 This application uses lightweight SQLite database placed in `database/database.sqlite`
 
@@ -12,7 +14,7 @@ this application uses axios as an HTTP client to request the server.
 
 `frontend/src/core/services/ApiService.ts` is responsible for initializing and creating axios instance.
 
-we use interceptors for: 
+we use interceptors for:
 1. Laravel validation errors(We perform validation on both the frontend and backend)
 2. Success messages
 

@@ -67,8 +67,6 @@ export default defineComponent({
     }
   },
 
-  setup: () => ({
-    studentStore: useStudentStore()
-  })
+  setup: () => ({studentStore: useStudentStore()})
 })
 </script>

@@ -50,7 +50,6 @@ export const useStudentStore = defineStore('studentStore', {
                 confirmButtonText: "Delete",
                 denyButtonText: `Cancel`
             }).then((result) => {
-                /* Read more about isConfirmed, isDenied below */
                 if (result.isConfirmed) {
                     this.is.deleting = true;
                     this.currentStudentId = studentId;

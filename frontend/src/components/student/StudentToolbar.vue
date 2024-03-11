@@ -23,9 +23,6 @@ export default defineComponent({
       default: 0,
     }
   },
-  setup: (_props: any, ctx) => ({
-    createStudent: () => ctx.emit('createStudent'),
-    router
-  })
+  setup: () => ({router})
 })
 </script>
